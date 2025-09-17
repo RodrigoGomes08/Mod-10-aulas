@@ -1,11 +1,11 @@
 #BlueJ class context
-comment0.target=Aluno
-comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Aluno\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
+comment0.target=Professor
+comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Professor\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
 comment1.params=id\ numProcesso\ nome\ dataNascimento\ morada\ telefone
-comment1.target=Aluno(int,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
-comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Aluno\r\n
+comment1.target=Professor(int,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Professor\r\n
 comment10.params=
-comment10.target=java.lang.String\ getmorada()
+comment10.target=java.lang.String\ getMorada()
 comment11.params=morada
 comment11.target=void\ setMorada(java.lang.String)
 comment12.params=

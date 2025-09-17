@@ -1,11 +1,11 @@
 
 /**
- * Escreva uma descrição da classe Aluno aqui.
+ * Escreva uma descrição da classe Professor aqui.
  * 
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
-public class Aluno
+public class Professor
 {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private int id;
@@ -15,13 +15,12 @@ public class Aluno
     private String morada;
     private int telefone;
 
-
     /**
-     * Construtor para objetos da classe Aluno
+     * Construtor para objetos da classe Professor
      */
-    public Aluno(int id, int numProcesso, String nome, String dataNascimento, String morada, int telefone)
+    public Professor(int id, int numProcesso, String nome, String dataNascimento, String morada, int telefone)
     {
-        this.id = id + 10;
+        this.id = id;
         this.numProcesso = numProcesso;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
@@ -75,7 +74,7 @@ public class Aluno
         this.dataNascimento = dataNascimento;
     }
     
-    public String getmorada()
+    public String getMorada()
     {
         return this.morada;
     }
@@ -94,6 +93,4 @@ public class Aluno
     {
         this.telefone = telefone;
     }
-
-
 }
