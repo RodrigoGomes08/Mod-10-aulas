@@ -9,23 +9,19 @@ public class Professor
 {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private int id;
-    private int numProcesso;
     private String nome;
-    private String dataNascimento;
-    private String morada;
-    private int telefone;
+    private int salario;
+    private int genero; //0=femenino, 1=masculino
 
     /**
      * Construtor para objetos da classe Professor
      */
-    public Professor(int id, int numProcesso, String nome, String dataNascimento, String morada, int telefone)
+    public Professor(int id, String nome, int salario, int genero)
     {
         this.id = id;
-        this.numProcesso = numProcesso;
         this.nome = nome;
-        this.dataNascimento = dataNascimento;
-        this.morada = morada;
-        this.telefone = telefone;
+        this.genero = genero;
+        this.setSalario(salario);
     }
 
     /**
@@ -44,16 +40,6 @@ public class Professor
         this.id = id;
     }
     
-    public int getNumProcesso()
-    {
-        return this.numProcesso;
-    }
-    
-    public void setNumProcesso(int numProcesso)
-    {
-        this.numProcesso = numProcesso;
-    }
-    
     public String getNome()
     {
         return this.nome;
@@ -64,33 +50,28 @@ public class Professor
         this.nome = nome;
     }
     
-    public String getDataNascimento()
+    public int getSalario()
     {
-        return this.dataNascimento;
+        return this.salario;
     }
     
-    public void setDataNascimento(String dataNascimento)
+    public void setSalario(int salario)
     {
-        this.dataNascimento = dataNascimento;
+        this.salario = salario;
+        if(this.genero == 1){
+            this.salario = salario * 2;
+        } else{
+            this.salario = salario;
+        }
     }
     
-    public String getMorada()
+    public int getGenero()
     {
-        return this.morada;
+        return this.genero;
     }
     
-    public void setMorada(String morada)
+    public void setGenero(int genero)
     {
-        this.morada = morada;
-    }
-    
-    public int getTelefone()
-    {
-        return this.telefone;
-    }
-    
-    public void setTelefone(int telefone)
-    {
-        this.telefone = telefone;
+        this.genero = genero;
     }
 }

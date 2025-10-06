@@ -5,7 +5,7 @@
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
  */
-public class DIsciplina
+public class Disciplina
 {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private int id;
@@ -17,7 +17,7 @@ public class DIsciplina
     /**
      * Construtor para objetos da classe Disciplina
      */
-    public DIsciplina(int id, String nomeDisciplina, int cargaHoraria, String sala, String semestre)
+    public Disciplina(int id, String nomeDisciplina, int cargaHoraria, String sala, String semestre)
     {
         // inicializa variáveis de instância
         this.id = id;
