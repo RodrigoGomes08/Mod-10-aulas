@@ -16,13 +16,12 @@ public class Lugar
     /**
      * Construtor para objetos da classe Lugar
      */
-    public Lugar(int id, String posicao, boolean ocupado, Autocarro autocarro)
+    public Lugar(int id)
     {
         // inicializa variáveis de instância
         this.id = id;
-        this.posicao = posicao;
-        this.ocupado = ocupado;
-        this.autocarro = autocarro;
+        this.posicao = this.buildLugarPosicao(id);
+        this.ocupado = false;
     }
 
     /**
@@ -61,6 +60,11 @@ public class Lugar
         this.ocupado = ocupado;
     }
     
+    public String buildLugarPosicao(int i)
+    {
+        return "L" + i + 1;
+    }
+    
     public Autocarro getAutocarro()
     {
         return this.autocarro;
@@ -71,6 +75,37 @@ public class Lugar
         this.autocarro = autocarro;
     }
     
+    /*
+     * Se o lugar estiver livre retorna TRUE e se o lugar estiver ocupado retorna FALSE
+     */
+    public boolean ocupar(Autocarro autocarroAEstacionar)
+    {
+        if(this.ocupado == false)
+        {
+            this.ocupado = true;
+            this.autocarro = autocarroAEstacionar;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    public boolean desocupar()
+    {
+        if(this.ocupado == true)
+        {
+            this.ocupado = false;
+            this.autocarro = null;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
     @Override
     public String toString()
     {
@@ -79,7 +114,7 @@ public class Lugar
     
     public Lugar toClone()
     {
-        Lugar newLugar = new Lugar(this.getId(), this.getPosicao(), this.getOcupado(), this.getAutocarro());
+        Lugar newLugar = new Lugar(this.getId());
         
         return newLugar;
     }

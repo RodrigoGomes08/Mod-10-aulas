@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ParqueEstacionamento
+comment1.params=id\ numLugares\ morada\ isFull\ lugares
+comment1.target=ParqueEstacionamento(int,\ int,\ java.lang.String,\ boolean,\ java.util.ArrayList)
+comment2.params=
+comment2.target=int\ numLugaresLivre()
+comment3.params=
+comment3.target=int\ unmLugaresOcupado()
+comment4.params=indexLugar
+comment4.target=boolean\ lugarDisponibilidade(int)
+numComments=5
