@@ -38,7 +38,7 @@ public class ContaBancaria
     
     public double levantar(double levantamento)
     {
-        if(levantamento <= this.saldo)
+        if(levantamento >= 0 && levantamento <= this.saldo)
         {
             this.saldo = this.saldo - levantamento;
         }
