@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Criatura
+comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Criatura\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
+comment1.params=nome\ tipo
+comment1.target=Criatura(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=
+comment3.target=java.lang.String\ getTipo()
+comment4.params=
+comment4.target=int\ getContadorCriaturas()
+comment5.params=
+comment5.target=void\ limparContador()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment7.params=
+comment7.target=void\ retirarVida()
+comment8.params=
+comment8.target=java.lang.String\ fazerBarulho()
+numComments=9
