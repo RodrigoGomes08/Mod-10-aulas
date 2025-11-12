@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Character
+comment0.text=\r\n\ Classe\ pCharacter\ que\ serve\ para\ descrever\ um\ personagem\r\n\ \r\n\ Rodrigo\ Gomes\r\n\ 12/11/2025\r\n
+comment1.params=name\ weapon\ fightingStyles\ height
+comment1.target=Character(java.lang.String,\ java.lang.String,\ java.lang.String,\ double)
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Character\r\n
+comment2.params=
+comment2.target=int\ sufferAttack()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
