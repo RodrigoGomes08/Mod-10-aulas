@@ -7,6 +7,7 @@ import java.util.Random;
  */
 public class Game
 {
+    private static final int NUMBER_FOR = 5;
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private Character[] characters;
     private Character player1;
@@ -42,7 +43,21 @@ public class Game
         
     public void play()
     {
-                
+         for( int i = 0; i < NUMBER_FOR; i++)
+         {
+             Random r = new Random();
+             
+             if(r.nextInt(2) == 0)
+             {
+                //System.out.println("O player 1 atacou o player 2");
+                this.player2.sufferAttack();
+             }
+             else
+             {
+                //System.out.println("O player 2 atacou o player 1");
+                this.player1.sufferAttack();
+             }
+         }
     }
     
     @Override
