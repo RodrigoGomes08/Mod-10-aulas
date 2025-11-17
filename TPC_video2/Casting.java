@@ -1,0 +1,18 @@
+
+/**
+ * Escreva uma descrição da classe Casting aqui.
+ * 
+ * @author (seu nome) 
+ * @version (um número da versão ou uma data)
+ */
+public class Casting
+{
+    public static void main(String[] args)
+    {
+        // Implicit casting
+        // byte > short > int > long > float > double
+        String x = "1";
+        int y = Integer.parseInt(x) + 2;
+        System.out.println(y);
+    }
+}
